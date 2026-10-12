@@ -1,0 +1,282 @@
+/**
+ * Career Connect - Responsive Layout Stylesheet
+ * Breakpoints: 1024px, 768px, 480px
+ */
+
+/* ==========================================================================
+   LAPTOP / TABLET (max-width: 1024px)
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .section-padding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .hero-heading {
+        font-size: 42px;
+    }
+
+    .hero-grid {
+        gap: 40px;
+    }
+
+    .about-preview-grid {
+        gap: 40px;
+    }
+
+    .stack-img-main {
+        height: 400px;
+    }
+
+    .course-detail-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .course-enroll-card {
+        position: static;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .prep-toolkit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .promo-banner-box {
+        padding: 45px 50px;
+        gap: 30px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+/* ==========================================================================
+   TABLET & MOBILE (max-width: 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .header-inner {
+        height: 72px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu-wrapper {
+        position: fixed;
+        top: 72px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--white);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 24px;
+        overflow-y: auto;
+        transform: translateX(-100%);
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .nav-menu-wrapper.is-open {
+        transform: translateX(0);
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .nav-menu .menu-item {
+        width: 100%;
+        border-bottom: 1px solid var(--gray-border);
+        padding-bottom: 10px;
+    }
+
+    .nav-menu .menu-item a {
+        font-size: 16px;
+        width: 100%;
+        display: block;
+    }
+
+    .nav-menu .menu-btn-enroll {
+        margin-left: 0;
+        margin-top: 15px;
+        border-bottom: none;
+    }
+
+    .nav-menu .btn-enroll-nav {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .hero-heading {
+        font-size: 36px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-floating-card {
+        display: none;
+        /* Hide floating chips on small mobile to avoid overflow */
+    }
+
+    /* About Preview */
+    .about-preview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-badge-card {
+        bottom: -15px;
+        right: 15px;
+        padding: 14px 18px;
+    }
+
+    .experience-badge-card .exp-number {
+        font-size: 26px;
+    }
+
+    /* How It Works Stacked */
+    .steps-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .step-connector {
+        width: 2px;
+        height: 30px;
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /* Promo Banner */
+    .promo-banner-box {
+        grid-template-columns: 1fr;
+        padding: 40px 28px;
+        text-align: center;
+    }
+
+    .promo-title {
+        font-size: 30px;
+    }
+
+    .promo-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .promo-avatar-wrap {
+        order: -1;
+    }
+
+    .promo-circle-frame {
+        width: 160px;
+        height: 160px;
+    }
+
+    /* Form Rows */
+    .form-row-2 {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-bottom-inner {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .result-highlights-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
+/* ==========================================================================
+   SMALL MOBILE (max-width: 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+    .container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .hero-heading {
+        font-size: 30px;
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-cta-group .btn {
+        width: 100%;
+    }
+
+    .hero-stats-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .hero-stat-sep {
+        display: none;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .assessment-tool-card {
+        padding: 24px 18px;
+    }
+
+    .category-filter-buttons {
+        gap: 6px;
+    }
+
+    .filter-tab-btn {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+}

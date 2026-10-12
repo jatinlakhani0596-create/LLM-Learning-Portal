@@ -1,0 +1,20 @@
+/*
+Theme Name: Career Connect
+Theme URI: https://careerconnect.local
+Author: Career Connect Education Design Team
+Author URI: https://careerconnect.local
+Description: A complete, polished, responsive education and career-learning WordPress theme inspired by modern geometric layouts with vibrant accents, featuring courses, interactive career guidance, team profiles, and enrollment workflows.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: career-connect
+Tags: education, career, courses, portfolio, grid-layout, custom-menu, featured-images, responsive-layout, theme-options
+
+--------------------------------------------------------------
+Career Connect WordPress Theme
+Main stylesheet is enqueued from assets/css/main.css and assets/css/responsive.css.
+--------------------------------------------------------------
+*/
